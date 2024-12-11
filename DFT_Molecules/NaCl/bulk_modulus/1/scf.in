@@ -1,0 +1,49 @@
+&CONTROL
+    calculation = 'scf',
+    restart_mode = 'from_scratch',
+    prefix = 'NaCl',
+    pseudo_dir = '../../',
+    outdir = './',
+    tstress = .true.
+/
+
+&SYSTEM
+    ibrav = 0,
+    nat = 8,                      
+    ntyp = 2,
+    ecutwfc = 80,
+/
+
+&ELECTRONS
+    conv_thr =  1.0d-6
+/
+
+&IONS
+/
+
+&CELL
+/
+
+ATOMIC_SPECIES
+Na  22.989769  Na_Pot
+Cl  35.453     Cl_Pot
+
+ATOMIC_POSITIONS (alat)
+Na   0.000000000    0.000000000    0.000000000 
+Na   0.000000000    0.500000000    0.500000000
+Na   0.500000000    0.000000000    0.500000000
+Na   0.500000000    0.500000000    0.000000000
+Cl   0.000000000    0.000000000    0.500000000
+Cl   0.000000000    0.500000000    0.000000000
+Cl   0.500000000    0.000000000    0.000000000
+Cl   0.500000000    0.500000000    0.500000000
+
+K_POINTS AUTOMATIC
+10 10 10 0 0 0
+
+CELL_PARAMETERS {angstrom}
+   5.644007699   0.000000000   0.000000000
+   0.000000000   5.644007699   0.000000000
+   0.000000000   0.000000000   5.644007699
+
+

@@ -1,0 +1,43 @@
+&CONTROL
+    calculation = 'vc-relax',
+    restart_mode = 'from_scratch',
+    prefix = 'CsCl',
+    pseudo_dir = '../',
+    outdir = './',
+/
+
+&SYSTEM
+    ibrav = 0,
+    nat = 2,                      
+    ntyp = 2,
+    ecutwfc = 60,
+/
+
+&ELECTRONS
+    electron_maxstep = 500
+    conv_thr =  1.0d-6
+/
+
+&IONS
+/
+
+&CELL
+/
+
+ATOMIC_SPECIES
+Cs  132.90545  Cs_Pot
+Cl  35.453     Cl_Pot
+
+ATOMIC_POSITIONS (alat)
+Cs   0.0000000000000000    0.0000000000000000    0.0000000000000000 
+Cl   0.5000000000000000    0.5000000000000000    0.5000000000000000 
+
+K_POINTS AUTOMATIC
+6 6 6 0 0 0
+
+CELL_PARAMETERS {angstrom}
+   4.1436983400000003    0.0000000000000000    0.0000000000000003
+   0.0000000000000007    4.1436983400000003    0.0000000000000003
+   0.0000000000000000    0.0000000000000000    4.1436983400000003
+
+
