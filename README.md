@@ -6,7 +6,7 @@ This project involves the application of Density Functional Theory (DFT) using Q
 ## **How I Did It**
 ### 1. **Preparation and Input Files**
    - **Downloaded POSCAR Files**: Obtained the POSCAR files for Si, NaCl, ZrC, and CsCl from reputable databases to serve as initial structures.
-   - - **Downloaded pseudopotential Files**: Obtained the pseudopotential files for Si, Na, Cl, Zr, C, and Cs from reputable databases to serve as initial structures.
+   - - **Downloaded Pseudopotential Files**: Obtained the pseudopotential files for Si, Na, Cl, Zr, C, and Cs from reputable databases to serve as initial structures.
    - **Created Input Files**:
      - `scf.in`: This file contains the input parameters for Quantum Espresso, including the functional (e.g., PBE), pseudopotentials, and k-point settings.
      - Parameters were initially taken from the Materials Project database and adjusted based on convergence tests for each material.
